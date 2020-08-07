@@ -10,6 +10,7 @@ const url = 'https://disease.sh/v3/covid-19/';
 function App() {
 	const [countries, setCountries] = useState([]);
 	const [global, setGlobal] = useState({});
+	const [selectedCountry, setSelectedCountry] = useState();
 
 	useEffect(() => {
 		async function fetchCountriesData() {
@@ -56,23 +57,26 @@ function App() {
 
 	return (
 		<div className='app-container'>
+			<h2>COVID-19 Stats</h2>
 			<div className='app-header'>
-				<h2 id='header-id'>COVID-19 Stats</h2>
 				<CountryDropdown countries={countries} />
 			</div>
 
+			<h2>Overview</h2>
 			<div className='app-cards'>
 				<InfoCard border={'primary'} cardTitle={'Cases'} cart />
 				<InfoCard border={'success'} cardTitle={'Recovered'} />
 				<InfoCard border={'danger'} cardTitle={'Deaths'} />
 			</div>
 
+			<h2>Map</h2>
 			<div className='app-map'>
 				<Map />
 			</div>
 
+			<h2>Graph</h2>
 			<div className='app-graph'>
-				<h1>Graph</h1>
+				<h3>-</h3>
 			</div>
 		</div>
 	);
