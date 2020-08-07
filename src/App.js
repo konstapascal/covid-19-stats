@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import 'leaflet/dist/leaflet.css';
-
 import InfoCard from './components/InfoCard';
 import CountryDropdown from './components/CountryDropdown';
 import Map from './components/Map';
@@ -66,9 +62,9 @@ function App() {
 			</div>
 
 			<div className='app-cards'>
-				<InfoCard />
-				<InfoCard />
-				<InfoCard />
+				<InfoCard border={'primary'} cardTitle={'Cases'} cart />
+				<InfoCard border={'success'} cardTitle={'Recovered'} />
+				<InfoCard border={'danger'} cardTitle={'Deaths'} />
 			</div>
 
 			<div className='app-map'>

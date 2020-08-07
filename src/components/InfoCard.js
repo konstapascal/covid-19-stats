@@ -3,11 +3,11 @@ import { Card } from 'react-bootstrap';
 
 import './styles/InfoCard.css';
 
-function InfoCard() {
+function InfoCard({ cardTitle, border }) {
 	return (
-		<Card className='card'>
+		<Card className='card' border={border}>
 			<Card.Body>
-				<Card.Title>Card Title</Card.Title>
+				<Card.Title>{cardTitle}</Card.Title>
 				<Card.Subtitle className='mb-2 text-muted'>Card Subtitle</Card.Subtitle>
 				<Card.Text>
 					Some quick example text to build on the card title and make up the
