@@ -5,7 +5,7 @@ import './styles/Map.css';
 
 function Map() {
 	return (
-		<LeafletMap className='map' center={[20, -20]} zoom={2}>
+		<LeafletMap className='map' center={[25, -20]} zoom={3}>
 			<TileLayer
 				url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 				attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

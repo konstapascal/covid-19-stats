@@ -70,6 +70,10 @@ function App() {
 			<div className='app-map'>
 				<Map />
 			</div>
+
+			<div className='app-graph'>
+				<h1>Graph</h1>
+			</div>
 		</div>
 	);
 }

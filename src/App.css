@@ -14,16 +14,14 @@
 	align-items: center;
 }
 
-#header-id {
-	margin-top: 3rem;
-	margin-bottom: 1.5rem;
-}
-
 .app-cards {
 	display: flex;
-	margin: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .app-map {
-	border: 2px solid rgb(200, 200, 200);
+	border: 0.1rem solid #007bff;
+	width: 100vw;
+	width: 100%;
 }
