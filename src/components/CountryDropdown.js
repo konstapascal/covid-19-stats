@@ -7,7 +7,7 @@ function CountryDropdown({ countries }) {
 	return (
 		<DropdownButton title='Choose a country'>
 			{countries.map(country => (
-				<Dropdown.Item>
+				<Dropdown.Item key={country.iso}>
 					<img className='flag-icon' src={country.flag} alt={country.country} />{' '}
 					{country.country}
 				</Dropdown.Item>

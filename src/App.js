@@ -13,6 +13,9 @@ function App() {
 	const [selectedCountry, setSelectedCountry] = useState();
 
 	useEffect(() => {
+		fetchCountriesData();
+		fetchGlobalData();
+
 		async function fetchCountriesData() {
 			const res = await axios.get(url + 'countries');
 			const data = res.data;
@@ -50,9 +53,6 @@ function App() {
 				affectedCountries: data.affectedCountries,
 			});
 		}
-
-		fetchCountriesData();
-		fetchGlobalData();
 	}, []);
 
 	return (
